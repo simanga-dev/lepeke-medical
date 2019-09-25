@@ -1,0 +1,54 @@
+.heading {
+  &-home-1 {
+   // background-color: $color-blue;
+    background-image: linear-gradient(to right, transparent, $color-blue);
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @media screen and (max-width: 1293px) {
+      font-size: 2.5rem;
+    }
+  }
+  &-home-2 {
+    //background-color: $color-red;
+    background-image: linear-gradient(to right, $color-red, transparent);
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @media screen and (max-width: 1293px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  80% {
+      transform: translateX(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translateX(-1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
