@@ -1,0 +1,22 @@
+.footer {
+  background-color: #333;
+  color: #ccc;
+
+ 
+
+  &-nav, &-icon {
+    display: flex;
+    list-style: none;
+    color: #ccc;
+    li {
+      &:not(:last-of-type) {
+        margin-right: 2rem;
+      }
+      a {
+        color: currentColor;
+      }
+    }
+  }
+  &-icon { justify-content: center }
+}
+

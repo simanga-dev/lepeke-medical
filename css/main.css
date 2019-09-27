@@ -67,7 +67,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .logo-img {
-    max-height: 8rem;
+    min-height: 8rem;
   }
 }
 
@@ -216,5 +216,56 @@ body {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+}
+
+.jumbotron {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 236, 239, 0.8)), to(rgba(233, 236, 239, 0.8))), url(../img/home1.jpg);
+  background-image: linear-gradient(rgba(233, 236, 239, 0.8), rgba(233, 236, 239, 0.8)), url(../img/home1.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.jumbotron .social-icon-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.jumbotron .social-icon-about li a {
+  color: #d62020;
+}
+
+.jumbotron .social-icon-about li:not(:last-of-type) {
+  padding-right: 2rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #ccc;
+}
+
+.footer-nav, .footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: #ccc;
+}
+
+.footer-nav li:not(:last-of-type), .footer-icon li:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.footer-nav li a, .footer-icon li a {
+  color: currentColor;
+}
+
+.footer-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.jumbotron {
+  background-image: linear-gradient(rgba(#e9ecef, .8), rgba(#e9ecef, .8)), url(../img/home1.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  .social-icon-about {
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    li {
+      a { color: $color-red }
+      &:not(:last-of-type) {
+        padding-right: 2rem;
+      }
+    }
+  }
+}
