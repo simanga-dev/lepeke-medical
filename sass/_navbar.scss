@@ -11,10 +11,16 @@
   &-item:not(:last-of-type) { padding-right: 2rem }
 
   &-link {
+    justify-self: end;
+    flex-grow: 0;
     font-family: $heading-font;
     font-size: 1.8rem;
     letter-spacing: .1rem;
+    transition: all ease-in .3s;
+    &:hover { color: $color-red !important }
   }
+
+  &-active a { color: $color-blue !important }
 }
 
 .logo {
@@ -52,9 +58,4 @@
 
     }
   }
-}
-
-.nav-link {
-  justify-self: end;
-  flex-grow: 0;
 }

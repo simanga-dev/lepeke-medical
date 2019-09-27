@@ -8,9 +8,16 @@
     font-size: 2rem;
     list-style: none;
     li {
-      a { color: $color-red }
+      transition: all ease .3s;
       &:not(:last-of-type) {
         padding-right: 2rem;
+      }
+      &:hover { transform: scale(1.2) }
+      &:hover a { color: $color-red }
+      a { 
+        color: $color-blue;
+        transition: all ease .3s;
+        //&:hover {  }
       }
     }
   }

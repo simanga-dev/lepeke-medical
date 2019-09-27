@@ -33,9 +33,24 @@ body {
 }
 
 .nav-link {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   letter-spacing: .1rem;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.nav-link:hover {
+  color: #d62020 !important;
+}
+
+.nav-active a {
+  color: #085b8c !important;
 }
 
 .logo {
@@ -85,14 +100,6 @@ body {
   }
 }
 
-.nav-link {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
 .carousel {
   height: 82vh;
 }
@@ -110,7 +117,7 @@ body {
 
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -218,6 +225,18 @@ body {
   }
 }
 
+.dropdown-item {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 1.5rem;
+  -webkit-transition: color ease .3s;
+  transition: color ease .3s;
+}
+
+.dropdown-item:hover {
+  color: #d62020;
+}
+
 .jumbotron {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 236, 239, 0.8)), to(rgba(233, 236, 239, 0.8))), url(../img/home1.jpg);
   background-image: linear-gradient(rgba(233, 236, 239, 0.8), rgba(233, 236, 239, 0.8)), url(../img/home1.jpg);
@@ -234,12 +253,28 @@ body {
   list-style: none;
 }
 
-.jumbotron .social-icon-about li a {
-  color: #d62020;
+.jumbotron .social-icon-about li {
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .jumbotron .social-icon-about li:not(:last-of-type) {
   padding-right: 2rem;
+}
+
+.jumbotron .social-icon-about li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.jumbotron .social-icon-about li:hover a {
+  color: #d62020;
+}
+
+.jumbotron .social-icon-about li a {
+  color: #085b8c;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .footer {
@@ -261,6 +296,13 @@ body {
 
 .footer-nav li a, .footer-icon li a {
   color: currentColor;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.footer-nav li a:hover, .footer-icon li a:hover {
+  text-decoration: none;
+  color: rgba(214, 32, 32, 0.5);
 }
 
 .footer-icon {
