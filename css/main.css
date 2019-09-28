@@ -100,19 +100,11 @@ body {
   }
 }
 
-.carousel {
-  height: 82vh;
-}
-
 .carousel-item {
   position: relative;
   height: 82vh;
-}
-
-.carousel-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .carousel-caption {
@@ -121,6 +113,26 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.home-1 {
+  background-image: url(../img/home5.jpg);
+}
+
+.home-2 {
+  background-image: url(../img/home2.jpg);
+}
+
+.home-3 {
+  background-image: url(../img/home3.jpg);
+}
+
+.home-4 {
+  background-image: url(../img/home4.jpg);
+}
+
+.home-5 {
+  background-image: url(../img/home1.jpg);
 }
 
 .heading-home-1 {
@@ -155,6 +167,16 @@ body {
   .heading-home-2 {
     font-size: 2.5rem;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .heading-1 {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-2 {
+  margin-bottom: 2rem;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -253,6 +275,12 @@ body {
   list-style: none;
 }
 
+@media screen and (max-width: 500px) {
+  .jumbotron .social-icon-about {
+    font-size: 1.2rem;
+  }
+}
+
 .jumbotron .social-icon-about li {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
@@ -277,12 +305,112 @@ body {
   transition: all ease .3s;
 }
 
+.about-cont {
+  min-height: 30rem;
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-p {
+    font-size: 1.3rem;
+  }
+}
+
+.inner-contact {
+  padding: 4rem 0;
+  justify-items: center;
+}
+
+.cont-logo {
+  height: 10rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+  .cont-logo {
+    text-align: center;
+  }
+}
+
+.cont-logo img {
+  height: 100%;
+}
+
+.cont-logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #085b8c;
+}
+
+.shortcut-link,
+.downloads {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .shortcut-link,
+  .downloads {
+    text-align: center;
+  }
+}
+
+.shortcut-link li a,
+.downloads li a {
+  font-size: 1.4rem;
+  color: #333;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.shortcut-link li a:hover,
+.downloads li a:hover {
+  color: #d62020;
+}
+
+@media screen and (max-width: 500px) {
+  .downloads {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .col-md-4 h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-info {
+    text-align: center;
+  }
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
 .footer {
   background-color: #333;
   color: #ccc;
+  padding: 2rem 0;
 }
 
-.footer-nav, .footer-icon {
+.footer-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,24 +418,24 @@ body {
   color: #ccc;
 }
 
-.footer-nav li:not(:last-of-type), .footer-icon li:not(:last-of-type) {
+.footer-icon li:not(:last-of-type) {
   margin-right: 2rem;
 }
 
-.footer-nav li a, .footer-icon li a {
+.footer-icon li a {
   color: currentColor;
   -webkit-transition: all ease-in .3s;
   transition: all ease-in .3s;
 }
 
-.footer-nav li a:hover, .footer-icon li a:hover {
+.footer-icon li a:hover {
   text-decoration: none;
   color: rgba(214, 32, 32, 0.5);
 }
 
 .footer-icon {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 /*# sourceMappingURL=main.css.map */

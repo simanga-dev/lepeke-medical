@@ -1,0 +1,65 @@
+.inner-contact {
+  padding: 4rem 0;
+  justify-items: center;
+}
+
+.cont-logo {
+  height: 10rem;
+  margin-bottom: 4rem;
+  @media screen and (max-width: 500px) { text-align: center }
+  & img {
+    height: 100%;
+  }
+
+  &-text {
+    font-family: $heading-font;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-blue;
+  }
+}
+
+.shortcut-link,
+.downloads {
+  list-style: none;
+  padding: 0;
+  @media screen and (max-width: 500px) { 
+    text-align: center;
+  }
+  li a {
+    font-size: 1.4rem;
+    color: #333;
+    transition: all .2s;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+}
+.downloads {
+  @media screen and (max-width: 500px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.col-md-4 h3 {
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.contact {
+  @media screen and (max-width: 500px) {
+    margin-bottom: 2rem;
+  }
+  &-info {
+    @media screen and (max-width: 500px) { text-align: center }
+    
+  }
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  
+}

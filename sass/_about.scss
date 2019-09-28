@@ -7,6 +7,9 @@
     display: flex;
     font-size: 2rem;
     list-style: none;
+    @media screen and (max-width: 500px) {
+      font-size: 1.2rem;
+    }
     li {
       transition: all ease .3s;
       &:not(:last-of-type) {
@@ -19,6 +22,22 @@
         transition: all ease .3s;
         //&:hover {  }
       }
+    }
+  }
+}
+
+.about {
+  &-cont {
+    min-height: 30rem;
+  }
+  @media screen and (max-width: 500px) {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  &-p {
+    @media screen and (max-width: 500px) {
+      font-size: 1.3rem;
     }
   }
 }

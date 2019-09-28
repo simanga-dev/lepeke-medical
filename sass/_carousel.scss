@@ -1,19 +1,24 @@
 .carousel {
-  height: 82vh;
-
+  
   &-item {
     position: relative;
     height: 82vh;
+    background-position: center;
+    background-size: cover;
   }
 
-  &-img {
-    width: 100%;
-    object-fit: cover;
-  }
   &-caption {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.home {
+  &-1 { background-image: url(../img/home5.jpg) }
+  &-2 { background-image: url(../img/home2.jpg) }
+  &-3 { background-image: url(../img/home3.jpg) }
+  &-4 { background-image: url(../img/home4.jpg) }
+  &-5 { background-image: url(../img/home1.jpg) }
 }

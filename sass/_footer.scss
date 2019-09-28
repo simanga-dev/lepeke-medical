@@ -1,10 +1,14 @@
 .footer {
   background-color: #333;
   color: #ccc;
+  padding: 2rem 0;
 
- 
+  @media screen and (max-width: 500px) {
 
-  &-nav, &-icon {
+  }
+
+
+  &-icon {
     display: flex;
     list-style: none;
     color: #ccc;
@@ -22,6 +26,6 @@
       }
     }
   }
-  &-icon { justify-content: center }
+  &-icon { justify-content: end }
 }
 

@@ -38,7 +38,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item  active nav-active">
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
@@ -47,19 +47,22 @@
               Products &amp; Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Community &amp; Mining Health Solution</a>
+              <a class="dropdown-item" href="cmhs.html">Community &amp; Mining Health Solution</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Radiology Solution</a>
+              <a class="dropdown-item" href="rs.html">Radiology Solution</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Medical Equipment Facilities</a>
+              <a class="dropdown-item" href="mef.html">Medical Equipment Facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Mobile &amp; Alternative health facilities</a>
+              <a class="dropdown-item" href="maf.html">Mobile &amp; Alternative health facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Laboratory Equipment</a>
+              <a class="dropdown-item" href="le.html">Laboratory Equipment</a>
             </div>
           </li>
-          <li class="nav-item active nav-active">
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Blog</a>
           </li>
         </ul>
       </div>
@@ -81,14 +84,14 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row inner-contact">
       <div class="col-md-4">
         <div class="cont-logo">
           <img src="img/logo-sm.png" alt="A company logo">
           <div class="cont-logo-text">Lepeke Medical</div>
         </div>
 
-        <ul class="shortcut-link">
+        <ul class="shortcut-link mb-5">
           <li><a href="about.html">About</a></li>
           <li><a href="about.html">Community &amp; Mining Health Solution</a></li>
           <li><a href="about.html">Radiology Solution</a></li>
@@ -98,7 +101,7 @@
         </ul>
 
         <h3>Downloads</h3>
-        <ul class="downloads">
+        <ul class="downloads mb-5">
           <li><a href="#">Company Profile</a></li>
           <li><a href="#">Case Studies</a></li>
           <li><a href="#">Reference Project</a></li>
@@ -107,35 +110,33 @@
       </div>
       <div class="col-md-4">
         <h3>Contact info</h3>
-        <div class="Contact-info">
-          <p class="info">Lorem, ipsum dolor.</p>
-          <p class="info">ipsum dolor.</p>
-          <p class="info">Pretoria</p>
-          <p class="info">5676</p>
-          <p class="info">5676 6575 767567</p>
-          <p class="info">Email: info@lepekemedical.co.za</p>
+        <div class="contact">
+          <p class="contact-info">Lorem, ipsum dolor.</p>
+          <p class="contact-info">ipsum dolor.</p>
+          <p class="contact-info">Pretoria</p>
+          <p class="contact-info">5676</p>
+          <p class="contact-info">5676 6575 767567</p>
+          <p class="contact-info">Email: info@lepekemedical.co.za</p>
         </div>
       </div>
       <div class="col-md-4">
         <form>
           <div class="form-group">
             <label for="validationTooltip01">Your Name</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark"
-              required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
               placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
           </div>
           <div class="form-group">
             <label for="validationTooltip01">Subject</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name"
-              value="Place a order" required>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1"> Your Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send</button>
@@ -144,21 +145,13 @@
     </div>
   </div>
 
-  <footer class="footer p-5">
-    <div class="row justify-content-center mb-5">
-      <p> LEPEKE MEDUCAL &copy; All copy right reserved </p>
-    </div>
+  <footer class="footer">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-5">
-          <ul class="footer-nav">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <p> LEPEKE MEDICAL &copy; All copy right reserved </p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <ul class="footer-icon">
             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
             <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>

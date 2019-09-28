@@ -8,6 +8,7 @@
     @media screen and (max-width: 1293px) {
       font-size: 2.5rem;
     }
+    
   }
   &-home-2 {
     //background-color: $color-red;
@@ -19,6 +20,14 @@
       font-size: 2.5rem;
     }
   }
+
+  &-1 {
+    @media screen and (max-width: 500px) {  font-size: 1.5rem }
+  }
+
+  &-2 {
+    margin-bottom: 2rem;
+   }
 }
 
 @keyframes moveInLeft {
