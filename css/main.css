@@ -72,18 +72,13 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 25vh;
+    margin-bottom: 2rem;
   }
 }
 
 .logo-img {
-  height: 100%;
   margin-right: 20px;
-}
-
-@media screen and (max-width: 500px) {
-  .logo-img {
-    min-height: 8rem;
-  }
+  height: 100%;
 }
 
 .logo-text {
