@@ -1,6 +1,6 @@
 .heading {
   &-home-1 {
-   // background-color: $color-blue;
+    text-transform: capitalize;
     background-image: linear-gradient(to right, transparent, $color-blue);
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -11,7 +11,7 @@
     
   }
   &-home-2 {
-    //background-color: $color-red;
+    text-transform: capitalize;
     background-image: linear-gradient(to right, $color-red, transparent);
     animation-name: moveInRight;
     animation-duration: 1s;
