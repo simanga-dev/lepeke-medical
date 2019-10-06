@@ -131,6 +131,7 @@ body {
 }
 
 .heading-home-1 {
+  text-transform: capitalize;
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#085b8c));
   background-image: linear-gradient(to right, transparent, #085b8c);
   -webkit-animation-name: moveInLeft;
@@ -148,6 +149,7 @@ body {
 }
 
 .heading-home-2 {
+  text-transform: capitalize;
   background-image: -webkit-gradient(linear, left top, right top, from(#d62020), to(transparent));
   background-image: linear-gradient(to right, #d62020, transparent);
   -webkit-animation-name: moveInRight;
@@ -302,6 +304,7 @@ body {
 
 .about-cont {
   min-height: 30rem;
+  padding: 6rem 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -314,7 +317,12 @@ body {
 @media screen and (max-width: 500px) {
   .about-p {
     font-size: 1.3rem;
+    display: block;
   }
+}
+
+.med-equi {
+  min-height: 30rem;
 }
 
 .inner-contact {

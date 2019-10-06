@@ -29,6 +29,7 @@
 .about {
   &-cont {
     min-height: 30rem;
+    padding: 6rem 0;
   }
   @media screen and (max-width: 500px) {
     text-align: center;
@@ -41,4 +42,8 @@
       display: block;
     }
   }
+}
+
+.med-equi {
+  min-height: 30rem;
 }
