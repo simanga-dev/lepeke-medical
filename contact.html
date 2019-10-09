@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!--This is for temporary when I am working offline-->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/main.css">
 
 
@@ -73,7 +71,7 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="heading-1"> Contact US</h1>
+      <h1 class="heading-1 jumbotron-heading-1"> Contact US</h1>
       <p class="lead">Follow us on social Media</p>
       <ul class="social-icon-about">
         <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
@@ -94,11 +92,11 @@
 
         <ul class="shortcut-link mb-5">
           <li><a href="about.html">About</a></li>
-          <li><a href="about.html">Community &amp; Mining Health Solution</a></li>
-          <li><a href="about.html">Radiology Solution</a></li>
-          <li><a href="about.html">Mobile &amp; Alternative health facilities</a></li>
-          <li><a href="about.html">Laboratory Equipment</a></li>
-          <li><a href="about.html">Contact</a></li>
+          <li><a href="cmhs.html">Community &amp; Mining Health Solution</a></li>
+          <li><a href="radiologysolution.html">Radiology Solution</a></li>
+          <li><a href="mahf.html">Mobile &amp; Alternative health facilities</a></li>
+          <li><a href="laboratoryequipment.html">Laboratory Equipment</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
 
         <h3>Downloads</h3>
@@ -121,24 +119,26 @@
         </div>
       </div>
       <div class="col-md-4">
-        <form>
+        <form action="contact-form.php" method="post">
           <div class="form-group">
             <label for="validationTooltip01">Your Name</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+            <input type="text" name="name" class="form-control" id="validationTooltip01" placeholder="First name"
+              required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" class="form-control" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp"
               placeholder="Enter email">
             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
           </div>
           <div class="form-group">
             <label for="validationTooltip01">Subject</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+            <input type="text" class="form-control" name="subject" id="validationTooltip01" placeholder="First name"
+              required>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1"> Your Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="10"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send</button>
         </form>
@@ -164,31 +164,15 @@
     </div>
   </footer>
 
-
-
-
-
-
-
-
-
-
-  <!--This is temporary for when I am working offline-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/dropdown.js"></script>
-
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 

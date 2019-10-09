@@ -1,14 +1,18 @@
-.navbar { 
-  background-color: rgba($color-blue, .1) ;
+.navbar {
+  background-color: rgba($color-blue, .1);
 }
+
 @media screen and (max-width: 500px) {
   .navbar .container {
     flex-direction: column !important;
     justify-content: space-between;
   }
 }
+
 .nav {
-  &-item:not(:last-of-type) { padding-right: 2rem }
+  &-item:not(:last-of-type) {
+    padding-right: 2rem
+  }
 
   &-link {
     justify-self: end;
@@ -17,15 +21,20 @@
     font-size: 1.8rem;
     letter-spacing: .1rem;
     transition: all ease-in .3s;
-    &:hover { color: $color-red !important }
+
+    &:hover {
+      color: $color-red !important
+    }
   }
 
-  &-active a { color: $color-blue !important }
+  &-active a {
+    color: $color-blue !important
+  }
 }
 
 .logo {
   display: block;
-  height: 18vh;
+  height: calc(5vh + 10rem);
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -39,9 +48,8 @@
   &-img {
     margin-right: 20px;
     height: 100%;
-    @media screen and (max-width: 500px) {
-      
-    }
+
+    @media screen and (max-width: 500px) {}
   }
 
   &-text {
@@ -50,12 +58,11 @@
     color: $color-blue;
     font-weight: 600;
     letter-spacing: 0.2rem;
+
     @media screen and (max-width: 992px) {
       font-size: 2rem;
     }
 
-    @media screen and (max-width: 500px) {
-
-    }
+    @media screen and (max-width: 500px) {}
   }
 }

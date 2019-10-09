@@ -2,30 +2,34 @@
   background-color: #333;
   color: #ccc;
   padding: 2rem 0;
+  font-size: 1.2rem;
 
-  @media screen and (max-width: 500px) {
-
-  }
+  @media screen and (max-width: 500px) {}
 
 
   &-icon {
     display: flex;
     list-style: none;
     color: #ccc;
+
     li {
       &:not(:last-of-type) {
         margin-right: 2rem;
       }
+
       a {
         color: currentColor;
         transition: all ease-in .3s;
+
         &:hover {
           text-decoration: none;
-          color:  rgba( $color-red, .5) ;
+          color: rgba($color-red, .5);
         }
       }
     }
   }
-  &-icon { justify-content: end }
-}
 
+  &-icon {
+    justify-content: end
+  }
+}

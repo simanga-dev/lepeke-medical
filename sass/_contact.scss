@@ -6,7 +6,11 @@
 .cont-logo {
   height: 10rem;
   margin-bottom: 4rem;
-  @media screen and (max-width: 500px) { text-align: center }
+
+  @media screen and (max-width: 500px) {
+    text-align: center
+  }
+
   & img {
     height: 100%;
   }
@@ -23,9 +27,11 @@
 .downloads {
   list-style: none;
   padding: 0;
-  @media screen and (max-width: 500px) { 
+
+  @media screen and (max-width: 500px) {
     text-align: center;
   }
+
   li a {
     font-size: 1.4rem;
     color: #333;
@@ -36,6 +42,7 @@
     }
   }
 }
+
 .downloads {
   @media screen and (max-width: 500px) {
     margin-bottom: 2rem;
@@ -52,14 +59,19 @@
   @media screen and (max-width: 500px) {
     margin-bottom: 2rem;
   }
+
   &-info {
-    @media screen and (max-width: 500px) { text-align: center }
-    
+    margin-bottom: 0;
+
+    @media screen and (max-width: 500px) {
+      text-align: center
+    }
+
   }
 }
 
 .btn {
   font-size: 1.6rem;
   text-transform: uppercase;
-  
+
 }

@@ -5,68 +5,95 @@
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
     @media screen and (max-width: 1293px) {
       font-size: 2.5rem;
     }
-    
+
   }
+
   &-home-2 {
     text-transform: capitalize;
     background-image: linear-gradient(to right, $color-red, transparent);
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
     @media screen and (max-width: 1293px) {
       font-size: 2.5rem;
     }
   }
 
   &-1 {
-    @media screen and (max-width: 500px) {  font-size: 1.5rem }
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem
+    }
   }
 
   &-2 {
     margin-bottom: 2rem;
-   }
+  }
+}
+
+.lead {
+  margin-bottom: 0;
+  animation-name: fadeIN;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeIN {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes moveInLeft {
   0% {
-      opacity: 0;
-      transform: translateX(-10rem);
+    opacity: 0;
+    transform: translateX(-10rem);
   }
 
   80% {
-      transform: translateX(1rem);
+    transform: translateX(1rem);
   }
 
   100% {
-      opacity: 1;
-      transform: translate(0);
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
 @keyframes moveInRight {
   0% {
-      opacity: 0;
-      transform: translateX(10rem);
+    opacity: 0;
+    transform: translateX(10rem);
   }
 
   80% {
-      transform: translateX(-1rem);
+    transform: translateX(-1rem);
   }
 
   100% {
-      opacity: 1;
-      transform: translate(0);
+    opacity: 1;
+    transform: translate(0);
   }
 }
+
 .dropdown {
   &-item {
     font-size: 1.5rem;
     font-family: $body-font;
     padding: 1rem 1.5rem;
     transition: color ease .3s;
+    color: #212529 !important;
 
     &:hover {
       color: $color-red;

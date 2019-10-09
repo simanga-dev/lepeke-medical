@@ -55,7 +55,7 @@ body {
 
 .logo {
   display: block;
-  height: 18vh;
+  height: calc(5vh + 10rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +97,7 @@ body {
 
 .carousel-item {
   position: relative;
-  height: 82vh;
+  height: calc(95vh - 10rem);
   background-position: center;
   background-size: cover;
 }
@@ -176,6 +176,38 @@ body {
   margin-bottom: 2rem;
 }
 
+.lead {
+  margin-bottom: 0;
+  -webkit-animation-name: fadeIN;
+          animation-name: fadeIN;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeIN {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIN {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -250,6 +282,7 @@ body {
   padding: 1rem 1.5rem;
   -webkit-transition: color ease .3s;
   transition: color ease .3s;
+  color: #212529 !important;
 }
 
 .dropdown-item:hover {
@@ -264,12 +297,31 @@ body {
   overflow: hidden;
 }
 
+.jumbotron-heading-1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-animation-name: textMoveIn;
+          animation-name: textMoveIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .jumbotron-heading-1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
 .jumbotron .social-icon-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 2rem;
   list-style: none;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -281,6 +333,10 @@ body {
 .jumbotron .social-icon-about li {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
+  -webkit-animation-name: iconMoveIn;
+          animation-name: iconMoveIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .jumbotron .social-icon-about li:not(:last-of-type) {
@@ -303,7 +359,7 @@ body {
 }
 
 .about-cont {
-  min-height: 30rem;
+  min-height: calc((95vh - 10rem) - 14.3rem);
   padding: 6rem 0;
 }
 
@@ -323,6 +379,86 @@ body {
 
 .med-equi {
   min-height: 30rem;
+}
+
+@-webkit-keyframes textMoveIn {
+  0% {
+    letter-spacing: 5px;
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes textMoveIn {
+  0% {
+    letter-spacing: 5px;
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes iconMoveIn {
+  0% {
+    padding-right: 3rem;
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  100% {
+    opacity: 1;
+    padding-right: 2rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes iconMoveIn {
+  0% {
+    padding-right: 3rem;
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.4;
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  100% {
+    opacity: 1;
+    padding-right: 2rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .inner-contact {
@@ -396,6 +532,10 @@ body {
   }
 }
 
+.contact-info {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 500px) {
   .contact-info {
     text-align: center;
@@ -411,6 +551,7 @@ body {
   background-color: #333;
   color: #ccc;
   padding: 2rem 0;
+  font-size: 1.2rem;
 }
 
 .footer-icon {
